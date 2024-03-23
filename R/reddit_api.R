@@ -37,4 +37,4 @@ clean_p<-str_remove(formatC(actual_p, format="f", digits=2), "^0") #Properly for
 test_result <- ifelse(clean_p>=0.05,"was not", "was") # Creating a changing assignment of "was" or "was not" for the publication section
 
 
-paste0("The correlation between upvotes and comments was r(",wow_cor$parameter,") =",clean_cor,", p = ",clean_p,". This test ",test_result," statistically significant.") #Making a dynamically changing sentence for as instructed!
+paste0("The correlation between upvotes and comments was r(",round(wow_cor$parameter,digits=0),") =",clean_cor,", p = ",clean_p,". This test ",test_result," statistically significant.") #Making a dynamically changing sentence for as instructed!
