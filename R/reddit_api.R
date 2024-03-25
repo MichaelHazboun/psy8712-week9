@@ -15,6 +15,8 @@ rstats_tbl <- tibble( #putting it all into one tibble
   comments=test2$threads$comments
 )
 
+#TO DO THIS WITH jSON YOU FIRST NEED TO GO TO THE PAGE YOU WANT, and ADD .json after the /
+
 # Visualization
 
 rstats_tbl %>% #made a scatter plot with a to visualize the data.
